@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/calculadora_sabrosa"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/Mamasota"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/mi_ni_a_bonita"
+        app:srcCompat="@drawable/mamasota"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/ingrese_primer_numero"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:hint="@string/_24"
+        android:inputType="number"
+        android:padding="10sp"
+        android:autofillHints="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/ingrese_segundo_numero"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:hint="@string/_16"
+        android:inputType="number"
+        android:padding="10sp"
+        android:autofillHints="" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp">
+
+        <Button
+            android:id="@+id/BtnSuma"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:text="+"
+            android:textSize="25sp"
+            android:onClick="Click"/>
+
+        <Button
+            android:id="@+id/BtnRes"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/BtnSuma"
+            android:background="@color/teal_700"
+            android:text="-"
+            android:textSize="35sp"
+            android:onClick="Click"/>
+
+        <Button
+            android:id="@+id/BtnMul"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/BtnRes"
+            android:background="@color/teal_700"
+            android:text="*"
+            android:textSize="25sp"
+            android:onClick="Click"/>
+
+        <Button
+            android:id="@+id/BtnDiv"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/BtnMul"
+            android:background="@color/teal_700"
+            android:text="/"
+            android:textSize="25sp"
+            android:onClick="Click"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+</android.support.v7.widget.LinearLayoutCompat>

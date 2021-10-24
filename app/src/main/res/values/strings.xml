@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="calculadora_sabrosa">Calculadora sabrosa</string>
+    <string name="mi_ni_a_bonita">Mi niña bonita</string>
+    <string name="ingrese_primer_numero">Ingrese primer numero:</string>
+    <string name="_24">24</string>
+    <string name="ingrese_segundo_numero">Ingrese segundo numero:</string>
+    <string name="_16">16</string>
+    <string name="resultado">Resultado:</string>
+</resources>
